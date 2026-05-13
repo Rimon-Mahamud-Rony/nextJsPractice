@@ -3,6 +3,15 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Gradient */
+  --background-gradient: linear-gradient(
+    to right,
+    #c7d2fe,  /* indigo-200 */
+    #ffffff,  /* white */
+    #c7d2fe   /* indigo-200 */
+  );
+
 }
 
 @theme inline {
@@ -16,6 +25,13 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+
+     --background-gradient: linear-gradient(
+      to right,
+      #1e1b4b,
+      #0a0a0a,
+      #1e1b4b
+    );
   }
 }
 

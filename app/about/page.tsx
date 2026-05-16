@@ -1,10 +1,18 @@
-export default function Home() {
+import TestPageDesign from "../components/TestPageDesign"
+export default function About() {
     return (
-        <div className="w-full h-screen items-center flex flex-row justify-center bg-gray-100">
-            <div className="text-slate-500">
-                <h1 className="text-2xl font-bold">About Page</h1>
-                <h2 className="text-lg">This is the about page of the Next.js application.</h2>
-            </div>
-        </div>
-    )
+      <>
+        <TestPageDesign
+          heading="About Page"
+          subject="Company Information"
+          body="This is the about page of the Next.js application."
+        >
+          <div className="mt-5 text-black">
+            <p>
+              this line is added to test the layout of the about page. It should be displayed below the body text and above the closing div tag of the TestPageDesign component.
+            </p>
+          </div>
+        </TestPageDesign>
+      </>
+    );
 }

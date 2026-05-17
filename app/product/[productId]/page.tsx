@@ -1,3 +1,6 @@
+import NotFound from "@/app/not-found";
+import { notFound } from "next/navigation";
+
 export default async function ProductDetails(
     { params
         
@@ -5,7 +8,11 @@ export default async function ProductDetails(
             params: Promise<{ productId: string }>;
     }
 ) {
-    const productId = (await params).productId ;
+  const productId = (await params).productId;
+  
+  if (parseInt(productId) > 10000) {
+    notFound();
+  }
     return (
       <div className="w-full h-screen items-center flex flex-row justify-center bg-gray-100">
         <div className="text-slate-500">

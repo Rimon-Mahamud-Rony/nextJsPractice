@@ -51,6 +51,9 @@ export default function NotFound() {
         <p className="mt-6 text-xs text-slate-400">
           If you think this is a mistake, please contact support.
         </p>
+        <p>
+          <a href="mailto:rimonronycste11@gmail.com" className="text-slate-500 hover:text-slate-700"> Contact Support</a> 
+        </p>
       </div>
     </div>
   );

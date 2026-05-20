@@ -18,12 +18,12 @@ export default function TestPageDesign({
       {/* Main Card */}
       <div className="w-full max-w-4xl rounded-3xl bg-white shadow-[0_10px_40px_rgba(0,0,0,0.06)] border border-slate-200 p-6">
         {/* Top Blur Decoration */}
-        <div className=" bg-cyan-100 text-cyan-700 p-1 rounded-md w-1/5 text-center mb-3">
+        <div className=" bg-cyan-700 text-white p-1 rounded-md w-1/5 text-center mb-3">
           Practice Project
         </div>
 
         {/* Heading */}
-        <h1 className="text-2xl font-bold tracking-tight text-cyan-500 leading-snug">
+        <h1 className="text-4xl font-bold tracking-tight text-cyan-700 leading-snug text-center">
           {heading}
         </h1>
 

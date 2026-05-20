@@ -27,7 +27,13 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <header className="bg-cyan-500 text-white p-4 fixed top-0 w-full text-start">
+        <h1 className="text-3xl font-bold text-black">My Next.js App</h1>
+      </header>
       <body className="min-h-full flex flex-col">{children}</body>
+      <footer className="bg-cyan-500 text-white p-4 fixed bottom-0 w-full text-center">
+        <p>&copy; 2023 My Next.js App. All rights reserved.</p>
+      </footer>
     </html>
   );
 }

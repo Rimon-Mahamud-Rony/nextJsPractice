@@ -13,7 +13,7 @@ export default function Home() {
 
           <h2 className="text-base text-black">
             Get started by editing{" "}
-            <code className=" px-2 py-1 rounded">app/page.tsx</code>
+            <code className="px-2 py-1 rounded bg-slate-300">app/page.tsx</code>
           </h2>
         </div>
       </div>

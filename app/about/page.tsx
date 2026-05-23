@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "About Us - Next.js Practice",
+  description: "Learn more about our company and team on the About Us page of our Next.js application.",
+};
+
 import TestPageDesign from "../components/TestPageDesign"
 export default function About() {
     return (

@@ -1,21 +1,48 @@
-import TestPageDesign from "@/app/components/TestPageDesign";
+import AuthTemplate from "../AuthTemplate";
 
 export default function ForgotPassword() {
     return (
-        <TestPageDesign
-            heading="Forgot Password"
-            subject="Enter your email to reset your password"
-            body="This is a practice forgot password page for the Next.js project. You can customize this page with your own design and functionality."
-        >
-            <div className="mt-5">
-                <form className="space-y-4">
-                    <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
-                        <input type="email" id="email" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-cyan-500 focus:ring-cyan-500 sm:text-sm" placeholder="you@example.com" />
-                    </div>
-                </form>
+      <AuthTemplate
+        heading="Forgot Password"
+        subject="Reset your account password"
+        body="Enter your email address below and we'll send you a password reset link."
+      >
+        <div className="w-full rounded-2xl bg-white px-8 py-2 text-black">
+          <form className="space-y-5">
+            {/* Email */}
+            <div className="space-y-2">
+              <label
+                htmlFor="email"
+                className="text-sm font-semibold text-gray-700"
+              >
+                Email Address
+              </label>
+
+              <input
+                type="email"
+                id="email"
+                placeholder="you@example.com"
+                className="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-200"
+              />
             </div>
-        </TestPageDesign>
-    )
+
+            {/* Info Box */}
+            <div className="rounded-xl border border-cyan-100 bg-cyan-50 px-4 py-3">
+              <p className="text-sm text-cyan-700">
+                We’ll send a secure password reset link to your email address.
+              </p>
+            </div>
+
+            {/* Button */}
+            <button
+              type="submit"
+              className="w-full rounded-xl bg-cyan-500 py-3 font-semibold text-white transition hover:bg-cyan-600 cursor-pointer"
+            >
+              Send Reset Link
+            </button>
+          </form>
+        </div>
+      </AuthTemplate>
+    );
 
 } 

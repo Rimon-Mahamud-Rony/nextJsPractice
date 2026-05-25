@@ -1,21 +1,74 @@
-import TestPageDesign from "@/app/components/TestPageDesign";
+
+import AuthTemplate from "../AuthTemplate";
+
 
 export default function Login() {
     return (
-        <TestPageDesign
-            heading="Login Page"
-            subject="Please enter your credentials to log in"
-            body="This is a practice login page for the Next.js project. You can customize this page with your own design and functionality."
-        >
-            <div className="mt-5">
-                <form className="space-y-4">
-                    <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
-                        <input type="email" id="email" className="text-black  mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-cyan-500 focus:ring-cyan-500 text-2xl p-5" placeholder='you@example.com' />
-                    </div>
-                </form>
+      <AuthTemplate
+        heading="Welcome Back"
+        subject="Login to your account"
+        body="Enter your credentials below to access your account."
+      >
+        <div className="w-full rounded-2xl bg-white px-8 py-2 text-black">
+          <form className="space-y-5">
+            {/* Email */}
+            <div className="space-y-2">
+              <label
+                htmlFor="email"
+                className="text-sm font-semibold text-gray-700"
+              >
+                Email Address
+              </label>
+
+              <input
+                type="email"
+                id="email"
+                placeholder="you@example.com"
+                className="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-200"
+              />
             </div>
-        </TestPageDesign>
-    )
+
+            {/* Password */}
+            <div className="space-y-2">
+              <label
+                htmlFor="password"
+                className="text-sm font-semibold text-gray-700"
+              >
+                Password
+              </label>
+
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+                className="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-200"
+              />
+            </div>
+
+            {/* Forgot + Register Links */}
+            <div className="flex items-center justify-between text-sm">
+              <a
+                href="/forgot-password"
+                className="text-cyan-600 hover:underline"
+              >
+                Forgot password?
+              </a>
+
+              <a href="/register" className="text-cyan-600 hover:underline">
+                Create account
+              </a>
+            </div>
+
+            {/* Button */}
+            <button
+              type="submit"
+              className="w-full rounded-xl bg-cyan-500 py-3 font-semibold text-white transition hover:bg-cyan-600"
+            >
+              Login
+            </button>
+          </form>
+        </div>
+      </AuthTemplate>
+    );
 
 } 

@@ -31,7 +31,7 @@ export default function AuthTemplate({
             {heading}
           </h1>
         ) : isLogin === true ? (
-          <h1 className="text-2xl font-bold tracking-tight text-green-500 leading-snug text-center">
+          <h1 className="text-2xl font-bold tracking-tight text-green-600 leading-snug text-center">
             {heading}
           </h1>
         ) : (

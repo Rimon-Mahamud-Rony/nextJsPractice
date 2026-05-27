@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import ErrorWrapper from "./error-wrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,10 +28,11 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-fqaxrdhy687trtzar ull flex flex-col scroll-auto">
-        {children}
+      <body className="min-h-full">
+        <ErrorWrapper>
+          <div className="w-full  flex flex-col scroll-auto">{children}</div>
+        </ErrorWrapper>
       </body>
-      
     </html>
   );
 }

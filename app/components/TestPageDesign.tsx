@@ -11,7 +11,7 @@ export default function TestPageDesign({
   heading,
   subject,
   body,
-  children
+  children,
 }: TestPageDesignProps) {
   return (
     <div className="min-h-screen bg-linear-to-br from-cyan-300 via-slate-600 to-cyan-300 flex items-center justify-center px-4 py-8">
@@ -31,7 +31,7 @@ export default function TestPageDesign({
         <h2 className="mt-2 text-sm font-medium text-slate-500">{subject}</h2>
 
         {/* Divider */}
-        <div className="w-12 h-[2px] bg-cyan-500 rounded-full mt-5"></div>
+        <div className="w-12 h-0.5 bg-cyan-500 rounded-full mt-5"></div>
 
         {/* Body */}
         <p className="mt-5 text-[13px] leading-7 text-slate-600">{body}</p>

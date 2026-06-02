@@ -29,9 +29,9 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full">
-        {/* <ErrorWrapper> */}
-          <div className="w-full  flex flex-col scroll-auto">{children}</div>
-         {/* </ErrorWrapper> */}
+         {/* <ErrorWrapper>  */}
+          <div className="w-full flex flex-col scroll-auto">{children}</div>
+         {/* </ErrorWrapper>  */}
       </body>
     </html>
   );

@@ -3,7 +3,7 @@ export default function UsersAnalytics() {
     <>
       <section className="rounded-xl bg-white p-6 shadow-sm">
         <h2 className="mb-4 text-lg font-semibold text-gray-800">
-          Default User Analytics
+          <span className="text-blue-500">Default</span> User Analytics
         </h2>
 
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">

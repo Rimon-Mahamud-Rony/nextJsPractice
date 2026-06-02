@@ -2,7 +2,7 @@ export default function RevenueMetrics() {
   return (
     <>
       <section className="rounded-xl bg-white p-6 shadow-sm">
-        <h2 className="mb-4 text-lg font-semibold text-gray-800"> Default Revenue</h2>
+        <h2 className="mb-4 text-lg font-semibold text-gray-800"> <span className="text-green-500">Default</span> Revenue</h2>
 
         <div className="space-y-2">
           <p className="text-sm text-gray-500">Total Revenue</p>

@@ -16,7 +16,7 @@ export default function ComplexDashboardLayout({
   })
 {
       
-  const isLoggingIn = false; // Simulating login state, you can replace this with actual authentication logic
+  const isLoggingIn = true; // Simulating login state, you can replace this with actual authentication logic
       
   return isLoggingIn ? (
     <CommonPageDesign>

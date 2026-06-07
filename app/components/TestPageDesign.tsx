@@ -14,9 +14,9 @@ export default function TestPageDesign({
   children,
 }: TestPageDesignProps) {
   return (
-    <div className="min-h-screen bg-linear-to-br from-cyan-300 via-slate-600 to-cyan-300 flex items-center justify-center px-4 py-8">
+    <div className="min-h-screen bg-linear-to-br from-slate-800 via-cyan-500 to-slate-800 flex items-center justify-center px-4 py-8">
       {/* Main Card */}
-      <div className="w-full max-w-4xl rounded-3xl bg-white shadow-[0_10px_40px_rgba(0,0,0,0.06)] border border-slate-200 p-6">
+      <div className="w-full max-w-4xl rounded-sm bg-white shadow-[0_10px_40px_rgba(0,0,0,0.06)] border border-slate-200 p-6">
         {/* Top Blur Decoration */}
         <div className=" bg-cyan-700 text-white p-1 rounded-md w-1/5 text-center mb-3">
           Practice Project
